@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/grayscale.min.css" rel="stylesheet">
+        <title>Diseños</title>
+    </head>
+    <body>
+        <h1>Diseños</h1>
+
+        <!-- Navbar simple con formulario de carga de imagen -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Diseños</a>
+                <form method="POST" enctype="multipart/form-data">
+                    <!-- Campo oculto de documento (eliminado el valor dinámico del JSP) -->
+                    <input type="hidden" name="docu" value="idDelUsuario">
+                    <!-- Campo de archivo para subir imagen -->
+                    <input type="file" name="fot" accept="image/*">
+                    <!-- Botón para guardar el archivo -->
+                    <input class="btn btn-dark" type="submit" value="Guardar">
+                </form>
+            </div>
+        </nav>
+
+        <!-- Sección de diseños (cargando imágenes estáticas) -->
+        <section>
+            <div class="container">
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <!-- Imagen de diseño 1 -->
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="img/IMG_20190218_183240_998.jpg" alt="Diseño 1">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-50 project">
+                            <div class="d-flex h-50">
+                                <div class="project-text w-50 my-auto text-lg-left">
+                                    <p class="mb-0 text-white-50 text-center">
+                                        Si deseas eliminar este diseño, da click en el botón
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <form method="POST">
+                            <!-- Campo oculto para ID de diseño (valor estático para eliminar diseño) -->
+                            <input type="hidden" name="nume" value="1">
+                            <!-- Botón de eliminar -->
+                            <input class="btn btn-danger btn-block" type="submit" value="Eliminar">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <!-- Imagen de diseño 2 -->
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="img/IMG_20190117_192321_566.jpg" alt="Diseño 2">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-50 project">
+                            <div class="d-flex h-50">
+                                <div class="project-text w-50 my-auto text-lg-left">
+                                    <p class="mb-0 text-white-50 text-center">
+                                        Si deseas eliminar este diseño, da click en el botón
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <form method="POST">
+                            <!-- Campo oculto para ID de diseño (valor estático para eliminar diseño) -->
+                            <input type="hidden" name="nume" value="2">
+                            <!-- Botón de eliminar -->
+                            <input class="btn btn-danger btn-block" type="submit" value="Eliminar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scripts de Bootstrap y jQuery -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Custom scripts for this template -->
+        <script src="js/grayscale.min.js"></script>
+    </body>
+</html>
